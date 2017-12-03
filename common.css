@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'MyFont';
+	src: url(Gyate-Luminescence.ttf);
+}
+
+body{
+    font-family: MyFont;
+    margin:0;
+    background-image:url(Texture/Back.jpg);
+}
+
+.title{
+    margin-top:10px;
+    text-align:center;
+}
+
+.menu ul{
+    text-align:center;
+    list-style-type: none;
+	padding-left: 0;
+    padding-top: 20px;
+}
+
+.menu li{
+    display: inline;
+}
+
+.menu li a{
+    background-image:url(Texture/Bt.png);
+    background-size:cover;
+	padding: 15px;
+    color:#000000;
+    font-size:30px;
+    text-decoration:none;
+}
+
+.menu ul:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.box6 p{
+    clear: both;
+    text-align: center;
+    margin:10px;
+    color:#000000;
+    font-size:30px;
+}
+
+.share ul{
+	text-align:center;
+    list-style-type: none;
+	padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.share li{
+    display:inline-block;
+	font-size:20px;
+    margin:30px;
+    padding:20px 0px 20px;
+	width:300px;
+	border-radius:3px;
+	list-style:none;
+}
+
+.share li.share-twitter{
+	background:#55acee;
+	box-shadow:0 2px #2795e9;
+}
+
+.share li.share-twitter:hover{
+	background:#83c3f3;
+}
+
+.share li.share-facebook{
+	background:#3b5998;
+	box-shadow:0 2px #2d4373;
+}
+
+.share li.share-facebook:hover{
+	background:#4c70ba;
+}
+
+.share li.share-youtube{
+	background:#CC181E;
+	box-shadow:0 2px #BE0200;
+}
+
+.share li.share-youtube:hover{
+	background:#DD2F40;
+}
+
+.share a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.share a:hover{
+	text-decoration:none;
+	color:#ffffff;
+}
+
+/* ~ 500px */
+@media(max-width:500px){
+    .menu li a{
+        padding:10px 5px;
+        font-size:20px;
+    }
+    
+    .share li a{
+        padding:10px 5px;
+        font-size:20px;
+    }
+    
+    .share li{
+        display: block;
+        width:auto;
+    }
+}
+
+/* ~ 900px */
+@media(max-width:900px) {
+    .menu li{
+        display:block;
+        margin-top:40px;
+    }
+}
+
+
+/* ~ 755px */
+@media(max-width:755px) {
+    .title img {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+}

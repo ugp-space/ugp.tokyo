@@ -1,0 +1,50 @@
+.link{
+    background-image:url(Texture/Bt.png);
+    background-size:cover;
+    margin: 70px 10px 10px;
+    padding:40px 60px 20px;
+}
+
+.link h2{
+    margin-left: 20px;
+}
+
+.link li,p{
+    padding-top:10px;
+    font-size: 25px;
+}
+
+.link ul{
+    margin-bottom:40px;
+}
+
+.link a{
+    color:#000000;
+}
+
+.link img{
+    padding-top: 4px;
+    width:15%;
+}
+
+.Qus{
+    font-weight:bolder;
+}
+
+.Ans{
+    font-size:21px;
+}
+
+/* ~ 500px */
+@media(max-width:500px){
+    
+    .link li,p{
+        font-size: 20px;
+    }
+    
+    .link{
+        margin-left:0px;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+}

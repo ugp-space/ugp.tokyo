@@ -1,0 +1,101 @@
+.link{
+    background-image:url(Texture/Bt.png);
+    background-size:cover;
+    margin: 70px 10px 10px;
+    padding:40px 60px 20px;
+}
+
+.link h2{
+    margin-left: 20px;
+}
+
+.link li,p{
+    padding-top:10px;
+    font-size: 25px;
+}
+
+.link ul{
+    margin-bottom:40px;
+}
+
+.link a{
+    color:#000000;
+}
+
+.link img{
+    padding-top: 4px;
+    width:15%;
+}
+
+.Qus{
+    font-weight:bolder;
+}
+
+.Ans{
+    font-size:21px;
+}
+
+.lb {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.7);
+    opacity: 0;
+    transition: .3s opacity ease;
+    z-index: -1;
+}
+
+.lb img {
+    width: auto !important;
+    max-height: 100%!important;
+    transform: scale(.7);
+    transition: .4s transform ease;
+    pointer-events: none;
+}
+
+.lb:target {
+    opacity: 1;
+    z-index: 103;
+}
+
+.lb:target img {
+    transform: scale(1);
+}
+
+/* なんちゃって閉じるボタン（いらない場合は消す） */
+.lb::before,.lb::after {
+    display: block;
+    position: fixed;
+    content: "";
+    width: 24px;
+    height:3px;
+    top: 24px;
+    right: 12px;
+    background: #fff;
+    border-radius: 4px;
+}
+.lb::before {
+    transform: rotate(-315deg);
+}
+.lb::after {
+    transform: rotate(315deg);
+}
+
+/* ~ 500px */
+@media(max-width:500px){
+    
+    .link li,p{
+        font-size: 20px;
+    }
+    
+    .link{
+        margin-left:0px;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+}
