@@ -48,3 +48,14 @@
 .lb::after {
     transform: rotate(315deg);
 }
+
+.box {
+    margin: 20px;
+    width : 30%;
+    float: left;
+    overflow:auto;
+}
+
+.box img {
+    width: 100% !important;
+}
